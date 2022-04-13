@@ -1,0 +1,44 @@
+.featured{
+    background-color: rgb(31, 30, 30);
+    flex: 3;
+    height: 200px;
+padding: 10px;
+border-radius: 5px;
+.top{
+    display: flex;
+    align-items: initial;
+    justify-content: space-between;
+    .title{
+        font-weight:bold;
+        font-size:15px;
+        color: gray;
+    }
+    .iconMore {
+        font-weight:bold;
+        font-size:15px;
+        color: gray;
+    }
+}
+.bottom{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    .featuredChart{
+        width: 120px;
+        height: 70px;
+        .circularProgress{
+            color: white;
+            font-size: 50px;
+        }
+    }
+    .titleTwo{
+        font-weight:bold;
+        font-size:15px;
+        color: gray;
+        
+    }
+}
+}
