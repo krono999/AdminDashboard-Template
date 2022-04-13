@@ -1,7 +1,7 @@
 import * as THREE from 'three';
 import {OrbitControls} from 'three/examples/jsm/controls/OrbitControls';
 import { Canvas, extend, useFrame, useLoader, useThree } from 'react-three-fiber';
-import circleImg from '../../aseets/circle.png';
+import circleImg from '../../aseets/circleOne.png';
 import { Suspense, useCallback, useMemo, useRef } from 'react';
 extend({OrbitControls})
 
@@ -23,7 +23,7 @@ function CameraControls(){
       ref={controlsRef}
       args={[camera, domElement]}
       autoRotate
-      autoRotateSpeed={-0.2}
+      autoRotateSpeed={0.2}
 
       
     />
@@ -59,7 +59,7 @@ function Points() {
   }, [count, sep, graph])
 
   useFrame(() => {
-    t += 18
+    t += 19
     
     const positions = bufferRef.current.array;
 
